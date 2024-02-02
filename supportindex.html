@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="facion.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="main.css" >
+     <script src="https://unpkg.com/feather-icons"></script>
+     <link href="/dist/output.css" rel="stylesheet">
+     <link rel="stylesheet" href="facion.ico" alt="image">
+    <title> 𝒩𝒪 𝑀𝑒𝒶𝓃𝓈 𝒩𝒪!|Supportindex </title>
+   <style>
+         *,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    
+
+        p {
+            text-align: center;
+        }
+
+        .search-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+            color: #000;
+            margin-right: 3%;
+            border: #ccc;
+           gap: 0.5rem;
+        }
+        
+        input[type="text"] {
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+              /* Your existing styles */
+              #menuIcon.active i::before {
+            content: '\00D7'; /* Unicode character for X */
+            }
+               
+        .custom-button1 {
+         padding: 10px 20px;
+         margin-right: 7px;
+         font-family: 'Mullish', sans-serif;
+         color: white;
+         border: 1px solid #2B84EA;
+         background-color: #2B84EA;
+         font-size: 1rem;
+         border-radius: 4px;
+          transition: all 200ms;
+         }
+
+       .custom-button1:hover {
+       color: #62a6f4; /* lightBlue500 */
+        }
+        .custom-button {
+         padding: 4px 8px;
+         margin-right: 7px;
+         font-family: 'Mullish', sans-serif;
+         color: white;
+         border: 1px solid #2B84EA;
+         background-color: #2B84EA;
+         font-size: 1rem;
+         border-radius: 4px;
+          transition: all 200ms;
+         }
+
+       .custom-button:hover {
+       color: #62a6f4; /* lightBlue500 */
+        }
+
+        .text{
+             
+            font-family: 'Mullish', sans-serif; 
+            color:gray;
+            margin-top: 6px;
+        }
+        .custom-button2 {
+         padding: 4px 8px;
+         margin-right: 7px;
+         font-family: 'Mullish', sans-serif;
+         color: white;
+         border: 1px solid #2B84EA;
+         background-color: #2B84EA;
+         font-size: 1rem;
+         border-radius: 10px;
+          transition: all 200ms;
+
+         }
+
+       .custom-button2:hover {
+       color: #62a6f4; /* lightBlue500 */
+        }
+     
+   </style>
+</head>
+<body>
+    <!-- nav bar -->
+       <!-- nav bar |first section -->
+       <div class="bg-[rgb(209,209,209)] text-gray-700"  >
+        <nav class="max-w-[1080px] h-[120px] container flex  justify-between items-center mx-auto xl:px-0 px-7">
+            <img src="assets/LOGO1-removebg-preview.png"  width="85px" height="65px" alt="logo">
+             <!-- Hamberget icon -->
+              <div id="menuIcon" class="xl:hidden  ml-24 absolute cursor-pointer block" onclick="toggleMenu()"> 
+                <i class="fa-solid fa-bars text-[33px]  "></i>
+                <div id="closeIcon" class="xl:hidden hidden ml-4 cursor-pointer mt-8">
+                    <i class="fa-solid fa-times text-[33px]"></i>
+                </div>
+                <div id="menuItems" class=" hidden xl:flex  font-ggSans  gap-6 font-[600] text-[16px] absolute mt-6 ">
+                    <ul class="flex flex-col">
+                        <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                            <a href="index.html"  onclick="toggleMenu()" >Home<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+
+                         <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="#"  onclick="toggleMenu()">Campaing<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                        
+                          <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="#"  onclick="toggleMenu()" >Resources<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                           
+                         <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                                
+                                <a href="supportindex.html"  onclick="toggleMenu()" >Support<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                               
+                         <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="aboutusindex.html"  onclick="toggleMenu()" >About Us<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                
+                    </ul>
+                </div>
+            </div>
+            <div id="menuItems" class=" hidden xl:flex  font-ggSans  gap-10 font-[600] text-[16px]  ">
+                <ul class="flex flex-auto space-x-6">
+                    <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                        <a href="index.html" >Home<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                           
+                    <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                        <a href="#" >Donation<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                           
+                     <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                            <a href="#" >Service card<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                
+                     <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                            <a href="#">Campaing<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                    
+                      <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                            <a href="#" >Resources<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                       
+                     <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                            
+                            <a href="supportindex.html" >Support<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                           
+                     <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                            <a href="aboutusindex.html" >About Us<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                            
+                </ul>
+                
+            </div>
+             <!-- button open discord  -->
+           
+                <span class="flex space-x-6 right-4">
+                    <img 
+                    src="assets/india.png" 
+                      width="45px" height="30px" style="padding-left: -30%;"/>
+            
+             <div class="right-4 hidden xl:flex">
+                 <button class="custom-button"><b><a href="indexlogin.html" >Log in</a></b></button>
+                
+                  <button class="custom-button"><b><a href="signupindex.html" >Sign up</a></b></button>
+                 </div>
+            
+        </nav>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script> 
+    <!-- here support feature given -->
+    <section class="bg-black text-white align-middle">
+        <div class="pb-[100px] pt-[6rem] mx-auto" style="background-color: rgb(209,209,209);">
+            <h1 class="font-mullish font-bold text-[80px] leading-[1.2] decoration-from-font">𝒩𝒪 𝑀𝑒𝒶𝓃𝓈 𝒩𝒪!</h1>
+            <p class="text-5xl mt-4 mb-3">How May I Help You?</p>
+            <div class="search-section">
+                <input type="text" placeholder="Search"><br><br>
+                <button class="custom-button1">
+                    <b><a href="#">Search</a></b>
+                </button>
+            </div>
+            <!-- add something news -->
+            <section class="relative mt-[190px] font-mullish overflow-hidden ">
+                <!-- feature section -->
+                <!-- heading -->
+                <div class="relative w-11/12 max-w-[1080px] mx-auto pt-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 ">
+                        <!-- box1 -->
+                        <div class="relative w-full min-h-[39rem] cursor-pointer border rounded-md bg-white hover:bg-gray-200">
+                            <!-- box content -->
+                            <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                                <!-- text part -->
+                                <div>
+                                    <img src="assets/policeman.png" height="10px">
+                                    <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] mt-3 mr-5"
+                                        style="color: rgb(188, 93, 243);">
+                                        <a href="">"Report to Authorities" </a>
+                                    </h3>
+                                    <p class="text pt-3">"Your voice matters. If you've experienced sexual assault, bravely use our 'Report to Authorities' section. Trust is crucial, and we're dedicated to providing a secure, confidential space.
+                                        We stand with you, ensuring your courage is met with respect and justice."
+                                    </p>
+                                    <div class="text-purple-400 font-mullish font-bold flex hover:text-black transition-all duration-200 mt-3">
+                                        <a href="">know More</a>
+                                        <i data-feather="chevron-right"
+                                            class="w-5 h-5 text-purple-400 font-mullish font-bold flex hover:text-blacktransition-all duration-200 ">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box2-->
+                        <div class="relative w-full min-h-[39rem] cursor-pointer border rounded-md bg-white hover:bg-gray-200">
+                            <!-- box shape -->
+                            <!-- box content -->
+                            <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                                <!-- text part -->
+                                <div>
+                                    <img src="assets/compliant.png" height="200px" width="100%">
+                                    <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] mt-3 mr-5 "
+                                        style="color: rgb(188, 93, 243);">
+                                        <a href="">Advocate<br>"Silent no More"</a>
+                                    </h3>
+                                    <p class="text mt-6">"Join the movement and be a part of 'Silent No More,' where advocacy transforms into action. Together, we amplify voices,
+                                        break the silence, and advocate for change against the shadows of injustice."
+                                    </p>
+                                    <div class="text-purple-400 font-mullish font-bold flex hover:text-black transition-all duration-200 mt-3">
+                                        <a href="">know More</a>
+                                        <i data-feather="chevron-right"
+                                            class="w-5 h-5 text-purple-400 font-mullish font-bold flex hover:text-blacktransition-all duration-200 ">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box3 -->
+                        <div class="relative w-full min-h-[39rem] cursor-pointer border rounded-md bg-white hover:bg-gray-200">
+                            <!-- box shape -->
+                            <!-- box content -->
+                            <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                                <!-- text part -->
+                                <div>
+                                    <img src="assets/elearning.png" height="200px" width="100%">
+                                    <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] mt-3 mr-5"
+                                        style="color: rgb(188, 93, 243);">Educational/Campaign<br>"Illuminate Minds"</h3>
+                                    <p class="text mt-6"> "Explore 'Illuminate Minds,' our educational hub where knowledge becomes a catalyst for change.
+                                        Engage in enlightening campaigns and empower yourself with information that fuels awareness and compassion."
+                                    </p>
+                                    <div class="text-purple-400 font-mullish font-bold flex hover:text-black transition-all duration-200 mt-3">
+                                        <a href="">know More</a>
+                                        <i data-feather="chevron-right"
+                                            class="w-5 h-5 text-purple-400 font-mullish font-bold flex hover:text-blacktransition-all duration-200 ">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box4 -->
+                        <div class="relative w-full min-h-[39rem] cursor-pointer border rounded-md bg-white hover:bg-gray-200">
+                            <!-- box shape -->
+                            <!-- box content -->
+                            <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                                <!-- text part -->
+                                <div>
+                                    <img src="assets/chating.png" height="200px" width="100%" />
+                                </div>
+                                <div>
+                                    <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] mt-3 mr-5"
+                                        style="color: rgb(188, 93, 243);">
+                                        <a href=""> Free Chatting <br>"Calm Conversations"
+                                        </a>
+                                    </h3>
+                                    <p class="text mt-6">"In 'Calm Conversations,' we provide a free, confidential space for those facing mental health challenges.
+                                        A listening ear is just a chat away, offering support, understanding, and a path towards healing."
+                                    </p>
+                                    <div class="text-purple-400 font-mullish font-bold flex hover:text-black transition-all duration-200 mt-3">
+                                        <a href="">know More</a>
+                                        <i data-feather="chevron-right"
+                                            class="w-5 h-5 text-purple-400 font-mullish font-bold flex hover:text-blacktransition-all duration-200 ">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box5 -->
+                        <div class="relative w-full min-h-[40rem] cursor-pointer border rounded-md bg-white hover:bg-gray-200">
+                            <!-- box shape -->
+                            <!-- box content -->
+                            <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                                <div>
+                                    <img src="assets/united.png" height="200px" width="100%" />
+                                </div>
+                                <!-- text part -->
+                                <div>
+                                    <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                                        style="color: rgb(188, 93, 243);">Human Rights/NGO <br>"Unity for Humanity"
+                                    </h3>
+                                    <p class="text mt-6">"Welcome to 'Unity for Humanity,' our space dedicated to defending human rights. As an NGO, we stand united against injustice,
+                                        working tirelessly to uphold the dignity and rights of every individual, everywhere."
+                                    </p>
+                                    <div class="text-purple-400 font-mullish font-bold flex hover:text-black transition-all duration-200 mt-3">
+                                        <a href="">know More</a>
+                                        <i data-feather="chevron-right"
+                                            class="w-5 h-5 text-purple-400 font-mullish font-bold flex hover:text-blacktransition-all duration-200 ">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box6 -->
+                        <div class="relative w-full min-h-[40rem] cursor-pointer border rounded-md bg-white hover:bg-gray-200">
+                            <!-- box shape -->
+                            <!-- box content -->
+                            <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 ">
+                                <!-- text part -->
+                                <div>
+                                    <img src="assets/LOGO1-removebg-preview.png" height="100px" width="90%" />
+                                </div>
+                                <div>
+                                    <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]"
+                                        style="color: rgb(188, 93, 243);">About US</h3>
+                                    <p class="text mt-6">We are NO Means NO!, a dedicated ally for survivors of sexual assault. Our mission revolves around providing a secure space for reporting through our 'Report to Authorities' section.
+                                        Committed to trust, confidentiality, and unwavering support, we stand with survivors,
+                                        ensuring their courage leads to respect and justice. Join us in our journey of empathy, advocacy, and positive change."
+                                    </p>
+                                    <div class="text-purple-400 font-mullish font-bold flex hover:text-black transition-all duration-200 mt-1">
+                                        <a href="">know More</a>
+                                        <i data-feather="chevron-right"
+                                            class="w-5 h-5 text-purple-400 font-mullish font-bold flex hover:text-blacktransition-all duration-200 ">
+                                        </i>
+                                    </div>
+                                    <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+<section>
+    <section class="relative text-white" >
+        <!-- first image -->
+        <img src="assets/feature-section1-dottedrows.png" loading="lazy" 
+        width="233"
+         height="167" 
+         class="absolute -top-[7rem] left-[5rem] inline-block -z-10"/>
+    
+        <img src="assets/feature-section1-dottedrows.png" loading="lazy" 
+        width="233"
+         height="167"
+         class="absolute top-[0rem] right-[0] inline-block rotate-180 "/>
+    
+           <div class="w-10/12 max-w-[1080px] flex flex-col md:flex-row justify-between items-center mx-auto  ">
+               <div class="  w-full md:grid md:grid-cols-3 gap-4 mt-20 ">
+                   <!-- box1 -->
+                   <div class="relative  w-full min-h-[30rem] cursor-pointer border  rounded-2xl text-black md:bg-transparent mt-4" style="background-color: #aaa0ff;">
+                    
+                           <!-- box contant -->
+                           <div class="z-[100]   absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" >
+                               <!-- text part -->
+                               <div>
+                                   <img src="assets/Screenshot 2023-11-03 135634.png" height="400px" width="100%" />
+                               </div>
+                               <div>
+                               <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]" style="color: black;"><a href="">Helping others makes us feel good</a></h3>
+                               <p class="font-mullish mt-6 text-black">It also makes other people feel pretty good too! Volunteer with NO Means NO! and make a difference.</p><br><br>
+                               <button class=" py-[12px] px-[16px] text-black bg-white rounded-3xl font-mullish font-bold transition-all duration-200 items-center" >
+                                   Get Involved </button>
+                               </div>   
+                                   <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200">
+                               </div>
+                           </div>
+               
+                   </div>
+                   <!-- box2-->
+                   <div class="relative  w-full min-h-[30rem] cursor-pointer border rounded-2xl md:bg-transparent  mt-4" style="background-color: #7049e6;">
+                      <!-- box shape -->
+                           <!-- box contant -->
+                           <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                               <!-- text part -->
+                               <div>
+                                   <img src="assets/Screenshot 2023-11-03 135858.png" height="300px" width="100%" />
+                               </div>
+                               <div>
+                               <h3 class="font-mullish font-bold text-white leading-[1.2] text-[1.375rem]"><a href="">40% of young people experience mental ill-health</a></h3>
+                               <p class="font-mullish text-white mt-6">Support NO Means NO! by donating to our critical services today.</p>
+                               <br><br>
+                               <button class=" py-[12px] px-[16px] text-black bg-white rounded-3xl font-mullish font-bold transition-all duration-200 items-center" >
+                                   Donate Now </button>
+                               </div>    
+                                   <div class="text-blue-500 font-mullish font-bold flex">
+                               </div>
+                           </div>
+               
+                   </div>
+                   <!-- box3 -->
+                   <div class="relative  w-full min-h-[30rem] cursor-pointer  border rounded-2xl md:bg-transparent  mt-4" style="background-color:#333C54;">
+                       <!-- box shape -->
+                           <!-- box contant -->
+                           <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 ">
+                               <!-- text part -->
+                               <div>
+                                   <img src="assets/Screenshot 2023-11-03 135931.png" height="300px" width="100%" />
+                               </div>
+                               <div>
+                               <h3 class="font-mullish font-bold text-white leading-[1.2] text-[1.375rem]">Stay in touch </h3>
+                               <p class="font-mullish text-white mt-6"> Sign up to our newsletter and get mental health and wellbeing info, tips and stories straight to your inbox.
+                               </p>
+                               <br><br>
+                               <button class=" py-[12px] px-[16px] text-black bg-white rounded-3xl font-mullish font-bold transition-all duration-200 items-center" >
+                                   Subscribe</button>
+                               </div>    
+                                   <div class="text-blue-500 font-mullish font-bold flex">
+                               </div>
+                               
+                           </div>
+                                </div>
+                                       </div>
+    </section>
+    <footer class="bg-black rounded-t-lg mt-20">
+       <div class="container text-[#5865f2] max-w-[1200px] mx-auto pt-24 flex flex-col gap-10 pb-10">
+           <!-- section1 -->
+           <div class="flex xl:gap-[100px] gap-[40px] flex-col md:flex-row px-5">
+               <!-- left section  -->
+                   <div class="max-w-100% text-white">
+                       <h1 class="font-[800] text-[32px] leading-[30.4px]">IMAGINE A<br/>PLACE</h1>
+                       <ul class="footer-social flex justify-end space-x-10 w-full p-10 py-12 bg-black">
+                           <li><a href="#" target="_blank"><img src="assets/instagram12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg "></a></li>
+                           <li><a href="#" target="_blank"><img src="assets/facebook12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></a></li>
+                           <li><a href="#" target="_blank"><img src="assets/linkedin12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></i></a></li>
+                           <li><a href="#" target="_blank"><img src="assets/google12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></a></li>
+                           <li><a href="#" target="_blank"><img src="assets/youtube12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></a></li>
+                       </ul>
+                   </div>
+               <!-- right section -->
+               <div class="md:w-[75%] flex justify-around flex-wrap">
+                   <div class="w-[50%] xl:w-fit">
+                      <h2 class="text-[16px] xl:py-[10px] py-[15px] cursor-pointer"><a href="index.html">Home</a></h2>
+                      <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+                       <li class="hover:underline"><a href="#">Donation</a></li>
+                       <li class="hover:underline"><a href="#">Service</a></li>
+                       <li class="hover:underline"><a href="#">Campaign</a></li>
+                      </ul>
+                   </div>
+                   <div class="w-[50%] xl:w-fit">
+                       <h2 class="text-[16px] xl:py-[10px] py-[15px]">company</h2>
+                       <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+                        <li class="hover:underline"><a href="aboutusindex.html">About</a></li>
+                        <li class="hover:underline"><a href="#">jobs</a></li>
+                        <li class="hover:underline"><a href="#">Brand</a></li>
+                        <li class="hover:underline"><a href="#">Newsroom</a></li>
+                        <li class="hover:underline"><a href="#">Fall Release</a></li>
+                        
+                       </ul>
+               </div>
+               <div class="w-[50%] xl:w-fit">
+                   <h2 class="text-[16px] xl:py-[10px] py-[15px]">Resource</h2>
+                   <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+                    <li class="hover:underline"><a href="#">Collage</a></li>
+                    <li class="hover:underline"><a href="supportindex.html">Support</a></li>
+                    <li class="hover:underline"><a href="#">Safety</a></li>
+                    <li class="hover:underline"><a href="#">Brand</a></li>
+                    <li class="hover:underline"><a href="#">Blog</a></li>
+                    <li class="hover:underline"><a href="#">Feedback</a></li>
+                    <li class="hover:underline"><a href="#">Devloper</a></li>
+                    <li class="hover:underline"><a href="#">Creators</a></li>
+                    <li class="hover:underline"><a href="#">Commuanity</a></li>
+                   </ul>
+    
+           </div>
+           <div class="w-[50%] xl:w-fit">
+               <h2 class="text-[16px] xl:py-[10px] py-[15px]">Resource</h2>
+               <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+                <li class="hover:underline"><a href="aboutusindex.html">Tearm</a></li>
+                <li class="hover:underline"><a href="#">Pravicy</a></li>
+                <li class="hover:underline"><a href="#">Cocking Setting</a></li>
+                <li class="hover:underline"><a href="#">Guidelince</a></li>
+                <li class="hover:underline"><a href="#">Ackonwledgement</a></li>
+                <li class="hover:underline"><a href="#">Licens</a></li>
+                <li class="hover:underline"><a href="#">Company information</a></li>
+               </ul>
+       </div>
+    </footer>
+     <!-- section2 -->
+     <section class="bg-black pb-10">
+     <div class=" bg-black max-w-[1120px] mx-auto flex  border-t-2 border-lightBlue500 items-center justify-between pt-7 ">
+       <div class="text-white">
+           <img src="assets/LOGO1-removebg-preview.png" alt="logo" width="85px" height="65px">
+       </div>
+       <div class="xl:block hidden">
+           <button class="custom-button2 "><a href="signupindex.html">Sing Up</a></button>
+       </div>
+       <div class="block xl:hidden">
+           <button class="custom-button2"><a href="indexlogin.html">Log in</a></button>
+       </div>
+       </div>
+           </div>
+     </section>
+   <script src="index.js"></script>
+   <script>
+       feather.replace()
+       const menuIcon = document.getElementById('menuIcon');
+const closeIcon = document.getElementById('closeIcon');
+const menuItems = document.getElementById('menuItems');
+
+function toggleMenu() {
+    const isActive = menuIcon.classList.contains('active');
+
+    menuIcon.classList.toggle('active', !isActive);
+    closeIcon.classList.toggle('hidden', !isActive);
+    menuItems.classList.toggle('hidden', !isActive);
+}
+menuIcon.addEventListener('click', toggleMenu);
+closeIcon.addEventListener('click', toggleMenu);
+   </script>
+   
+</section>
+</body>
+</html>

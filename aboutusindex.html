@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="facion.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="main.css" >
+     <link href="/dist/output.css" rel="stylesheet">
+     <script src="https://unpkg.com/feather-icons"></script>
+    <title> 𝒩𝒪 𝑀𝑒𝒶𝓃𝓈 𝒩𝒪!|About-us </title>
+    <style>
+             *,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+        }
+               /* Your existing styles */
+               #menuIcon.active i::before {
+            content: '\00D7'; /* Unicode character for X */
+            }
+               
+        .custom-button1 {
+         padding: 10px 20px;
+         margin-right: 7px;
+         font-family: 'Mullish', sans-serif;
+         color: white;
+         border: 1px solid #2B84EA;
+         background-color: #2B84EA;
+         font-size: 1rem;
+         border-radius: 4px;
+          transition: all 200ms;
+         }
+
+       .custom-button1:hover {
+       color: #62a6f4; /* lightBlue500 */
+        }
+        .custom-button {
+         padding: 4px 8px;
+         margin-right: 7px;
+         font-family: 'Mullish', sans-serif;
+         color: white;
+         border: 1px solid #2B84EA;
+         background-color: #2B84EA;
+         font-size: 1rem;
+         border-radius: 4px;
+          transition: all 200ms;
+         }
+
+       .custom-button:hover {
+       color: #62a6f4; /* lightBlue500 */
+        }
+
+        .text{
+             
+            font-family: 'Mullish', sans-serif; 
+            color:gray;
+            margin-top: 6px;
+        }
+        .custom-button2 {
+         padding: 4px 8px;
+         margin-right: 7px;
+         font-family: 'Mullish', sans-serif;
+         color: white;
+         border: 1px solid #2B84EA;
+         background-color: #2B84EA;
+         font-size: 1rem;
+         border-radius: 10px;
+          transition: all 200ms;
+
+         }
+
+       .custom-button2:hover {
+       color: #62a6f4; /* lightBlue500 */
+        }
+
+        .circle-container {
+            display: flex;
+            display: table-column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+        <!-- nav bar |first section -->
+        <div class="bg-[rgb(209,209,209)] text-gray-700"  >
+            <nav class="max-w-[1080px] h-[120px] container flex  justify-between items-center mx-auto xl:px-0 px-7">
+                <img src="assets/LOGO1-removebg-preview.png"  width="85px" height="65px" alt="logo">
+                 <!-- Hamberget icon -->
+                  <div id="menuIcon" class="xl:hidden  ml-24 absolute cursor-pointer block" onclick="toggleMenu()"> 
+                    <i class="fa-solid fa-bars text-[33px]  "></i>
+                    <div id="closeIcon" class="xl:hidden hidden ml-4 cursor-pointer mt-8">
+                        <i class="fa-solid fa-times text-[33px]"></i>
+                    </div>
+                    <div id="menuItems" class=" hidden xl:flex  font-ggSans  gap-6 font-[600] text-[16px] absolute mt-6 ">
+                        <ul class="flex flex-col">
+                            <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="index.html"  onclick="toggleMenu()" >Home<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+    
+                             <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                    <a href="#"  onclick="toggleMenu()">Campaing<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                            
+                              <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                    <a href="#"  onclick="toggleMenu()" >Resources<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                               
+                             <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                                    
+                                    <a href="supportindex.html"  onclick="toggleMenu()" >Support<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                                   
+                             <li class="text-black font-mullish py-5 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                    <a href="aboutusindex.html"  onclick="toggleMenu()" >About Us<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>         
+                        </ul>
+                    </div>
+                </div>
+                <div id="menuItems" class=" hidden xl:flex  font-ggSans  gap-10 font-[600] text-[16px]  ">
+                    <ul class="flex flex-auto space-x-6">
+                        <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                            <a href="index.html" >Home<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                               
+                        <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                            <a href="#" >Donation<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                               
+                         <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="#" >Service card<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                    
+                         <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="#">Campaing<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                        
+                          <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="#" >Resources<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                           
+                         <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                                
+                                <a href="supportindex.html" >Support<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                               
+                         <li class="text-black font-mullish py-7 hover:text-lightBlue300 cursor-pointer transition-all duration-200 relative group">
+                                <a href="aboutusindex.html" >About Us<div class="absolute bottom-0  w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200" ></div></a></li>
+                                
+                    </ul>
+                    
+                </div>
+                 <!-- button open discord  -->
+               
+                    <span class="flex space-x-6 right-4">
+                        <img 
+                        src="assets/india.png" 
+                          width="45px" height="30px" style="padding-left: -30%;"/>
+                
+                 <div class="right-4 hidden xl:flex">
+                     <button class="custom-button"><b><a href="indexlogin.html" >Log in</a></b></button>
+                    
+                      <button class="custom-button"><b><a href="signupindex.html" >Sign up</a></b></button>
+                     </div>
+                
+            </nav>
+        </div>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script> 
+       
+        <section class="relative text-white pb-[200px] " style="background-color: rgb(209,209,209);">
+            <div class="width-10/12 max-w-[1080px] flex flex-col justify-between items-center mx-auto ">
+                <!-- left part -->
+                <div class="width-10/12 max-w-[700px] flex flex-col justify-between items-center mx-auto mt-40 text-black ">
+                <!-- <div class="space-y-5"> -->
+                    <h1 class="font-mullish font-bold text-5xl leading-[1.2] ">Our Story</h1>
+                    <div class="w-10 h-1 bg-greenLight " ></div>
+                    <p class="text-2xl space-y-4" >At NO Means NO!, we believe in the power of awareness, compassion, and action. Our journey began with a simple yet powerful realization: that sexual assault is a pervasive issue affecting countless lives. We recognized the urgent need to make a change, to break the silence, and to offer support to survivors.
+                        Founded in 2022-23, our organization has been committed to creating a safer and more empathetic world. We are a community of advocates, survivors, allies, and supporters who share a common goal: to end the stigma surrounding sexual assault and provide a safe space for survivors to heal and thrive.
+                        Over the years, we have worked tirelessly to raise awareness, educate, and empower individuals to prevent sexual assault. We've also provided resources, counseling, and a network of understanding for those affected by it. Our journey is ongoing, and we invite you to join us in our mission to create a world free from sexual violence.
+                        Together, we can make a difference. Join us on this journey as we share stories of resilience, provide support, and work toward a future where sexual assault is a thing of the past.
+                    </p> 
+                </div>
+                <!-- right part -->
+                <div class="space-y-10 mt-10 text-black font-bold">
+                    <h1 class="font-mullish font-bold text-5xl leading-[1.2] mt-7 text-black">Team Members</h1>
+                    <div class="w-10 h-1 bg-greenLight"></div> 
+                    <div class="flex flex-wrap gap-10 mb-20">
+                        <!-- First Pair of Images -->
+                        <div class="flex flex-col items-center">
+                            <div class="circle">
+                                <img src="assets/team2.jpg" alt="Arpita Singh">
+                            </div>
+                            <span class="mt-2">Arpita Singh</span>
+                        </div>
+                
+                        <div class="flex flex-col items-center mt-4 lg:mt-0">
+                            <div class="circle">
+                                <img src="assets/teamv.jpg" alt="Vrinda Maheshwari">
+                            </div>
+                            <span class="mt-2">Vrinda Maheshwari</span>
+                        </div>
+                
+                        <!-- Second Pair of Images -->
+                        <div class="flex flex-col items-center mt-4 lg:mt-0">
+                            <div class="circle">
+                                <img src="assets/team1.png" style="background-color:whitesmoke" alt="Vipul Yadav">
+                            </div>
+                            <span class="mt-2">Vipul Yadav</span>
+                        </div>
+                
+                        <div class="flex flex-col items-center mt-4 lg:mt-0">
+                            <div class="circle">
+                                <img src="assets/team7.jpg" alt="Nandani Gupta">
+                            </div>
+                            <span class="mt-2">Nandani Gupta</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            </div>
+        </section>
+        <section class="relative mt-9 font-mullish overflow-hidden  mb-7">
+            <!-- feature section -->
+            <!-- first image -->
+                <img src="assets/feature-section1-dottedrows.png" loading="lazy" 
+                width="233"
+                 height="167" 
+                 class="absolute -top-[7rem] left-[5rem] inline-block -z-10"/>
+        
+                <img src="assets/feature-section1-dottedrows.png" loading="lazy" 
+                width="233"
+                 height="167"
+                 class="absolute top-[3rem] right-[0] inline-block rotate-180 "/>
+             <!-- heading -->
+             <div class=" relative w-11/12 max-w-[1080px] mx-auto pt-4 ">
+        
+                  <h3 class="font-bold text-center font-mullish text-4xl leading-[1.2]" style="color: rgb(255, 179, 0);"><span style="color: black;">NOW!!</span><br>
+                    All of you will be thinking So, why don't they tell the police??</h3>
+                  <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+                  <!-- content box -->
+                  <div class="w-full min-h-[400px] bg-white flex rounded-md relative p-10 py-12 border">
+                    <!-- left section -->
+                       <div class="flex flex-col justify-between  w-full text-2xl space-y-4 ">
+                        <ul class="space-y-2">
+                                 <li class="font-mullish flex items-center space-x-2 ">
+                                    <span> So the various reports says, these are the most replied answers given by the victims and their relatives.</span>
+                                </li>
+                                <li class="font-mullish flex items-center space-x-2">
+                                    <i data-feather="check" class="text-greenLight"></i>
+                                    <span> 40% said ‘embarrassment..</span>
+                                </li>
+                                <li class="font-mullish flex items-center space-x-2">
+                                    <i data-feather="check" class="text-greenLight"></i>
+                                    <span>38% said they didn’t think the police could help.. </span>
+                                </li>
+                                <li class="font-mullish flex items-center space-x-2">
+                                    <i data-feather="check" class="text-greenLight"></i>
+                                    <span>34% said they thought it would be humiliating…</span>
+                                </li>
+                                <li class="font-mullish flex items-center space-x-2">
+                                    <span>67,169 rapes were recorded by police in 2022.By the end of the year, charges had been brought in just 1,276 (1.9%) of these cases. 
+                                        This means that...Less than 2 in 100 rapes recorded by police in 2022 resulted in a charge that same year. </span>
+                                </li>
+                        </ul>
+                  </div>
+                  </section>
+                  <!-- first image -->
+<section>
+    <div class="width-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto mb-9">
+    <img src="assets/aboutimage23456.png" alt="normal_picture" style="align-items: center;"></div>
+</section>
+<!-- second image  -->
+<section>
+    <div class="width-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto mb-9">
+    <img src="assets/aboutimage1.png" alt="normal_picture" style="align-items: center;"></div>
+</section>
+<!-- this secontion every page show -->
+
+<section class="relative text-white" >
+    <!-- first image -->
+    <img src="assets/feature-section1-dottedrows.png" loading="lazy" 
+    width="233"
+     height="167" 
+     class="absolute -top-[7rem] left-[5rem] inline-block -z-10"/>
+
+    <img src="assets/feature-section1-dottedrows.png" loading="lazy" 
+    width="233"
+     height="167"
+     class="absolute top-[0rem] right-[0] inline-block rotate-180 "/>
+
+       <div class="w-10/12 max-w-[1080px] flex flex-col md:flex-row justify-between items-center mx-auto  ">
+           <div class="  w-full md:grid md:grid-cols-3 gap-4 mt-20 ">
+               <!-- box1 -->
+               <div class="relative  w-full min-h-[30rem] cursor-pointer border  rounded-2xl text-black md:bg-transparent mt-4" style="background-color: #aaa0ff;">
+                
+                       <!-- box contant -->
+                       <div class="z-[100]   absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8" >
+                           <!-- text part -->
+                           <div>
+                               <img src="assets/Screenshot 2023-11-03 135634.png" height="400px" width="100%" />
+                           </div>
+                           <div>
+                           <h3 class="font-mullish font-bold text-deepBlueHead leading-[1.2] text-[1.375rem]" style="color: black;"><a href="">Helping others makes us feel good</a></h3>
+                           <p class="font-mullish mt-6 text-black">It also makes other people feel pretty good too! Volunteer with NO Means NO! and make a difference.</p><br><br>
+                           <button class=" py-[12px] px-[16px] text-black bg-white rounded-3xl font-mullish font-bold transition-all duration-200 items-center" >
+                               Get Involved </button>
+                           </div>   
+                               <div class="text-blue-500 font-mullish font-bold flex hover:text-black transition-all duration-200">
+                           </div>
+                       </div>
+           
+               </div>
+               <!-- box2-->
+               <div class="relative  w-full min-h-[30rem] cursor-pointer border rounded-2xl md:bg-transparent  mt-4" style="background-color: #7049e6;">
+                  <!-- box shape -->
+                       <!-- box contant -->
+                       <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                           <!-- text part -->
+                           <div>
+                               <img src="assets/Screenshot 2023-11-03 135858.png" height="300px" width="100%" />
+                           </div>
+                           <div>
+                           <h3 class="font-mullish font-bold text-white leading-[1.2] text-[1.375rem]"><a href="">40% of young people experience mental ill-health</a></h3>
+                           <p class="font-mullish text-white mt-6">Support NO Means NO! by donating to our critical services today.</p>
+                           <br><br>
+                           <button class=" py-[12px] px-[16px] text-black bg-white rounded-3xl font-mullish font-bold transition-all duration-200 items-center" >
+                               Donate Now </button>
+                           </div>    
+                               <div class="text-blue-500 font-mullish font-bold flex">
+                           </div>
+                       </div>
+           
+               </div>
+               <!-- box3 -->
+               <div class="relative  w-full min-h-[30rem] cursor-pointer  border rounded-2xl md:bg-transparent  mt-4" style="background-color:#333C54;">
+                   <!-- box shape -->
+                       <!-- box contant -->
+                       <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8 ">
+                           <!-- text part -->
+                           <div>
+                               <img src="assets/Screenshot 2023-11-03 135931.png" height="300px" width="100%" />
+                           </div>
+                           <div>
+                           <h3 class="font-mullish font-bold text-white leading-[1.2] text-[1.375rem]">Stay in touch </h3>
+                           <p class="font-mullish text-white mt-6"> Sign up to our newsletter and get mental health and wellbeing info, tips and stories straight to your inbox.
+                           </p>
+                           <br><br>
+                           <button class=" py-[12px] px-[16px] text-black bg-white rounded-3xl font-mullish font-bold transition-all duration-200 items-center" >
+                               Subscribe</button>
+                           </div>    
+                               <div class="text-blue-500 font-mullish font-bold flex">
+                           </div>
+                           
+                       </div>
+                            </div>
+                                   </div>
+</section>
+<footer class="bg-black rounded-t-lg mt-20">
+   <div class="container text-[#5865f2] max-w-[1200px] mx-auto pt-24 flex flex-col gap-10 pb-10">
+       <!-- section1 -->
+       <div class="flex xl:gap-[100px] gap-[40px] flex-col md:flex-row px-5">
+           <!-- left section  -->
+               <div class="max-w-100% text-white">
+                   <h1 class="font-[800] text-[32px] leading-[30.4px]">IMAGINE A<br/>PLACE</h1>
+                   <ul class="footer-social flex justify-end space-x-10 w-full p-10 py-12 bg-black">
+                       <li><a href="#" target="_blank"><img src="assets/instagram12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg "></a></li>
+                       <li><a href="#" target="_blank"><img src="assets/facebook12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></a></li>
+                       <li><a href="#" target="_blank"><img src="assets/linkedin12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></i></a></li>
+                       <li><a href="#" target="_blank"><img src="assets/google12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></a></li>
+                       <li><a href="#" target="_blank"><img src="assets/youtube12.png" alt="" width="60px" class="hover:bg-gray-400 rounded-lg"></a></li>
+                   </ul>
+               </div>
+           <!-- right section -->
+           <div class="md:w-[75%] flex justify-around flex-wrap">
+               <div class="w-[50%] xl:w-fit">
+                  <h2 class="text-[16px] xl:py-[10px] py-[15px]"><a href="index.html">Home</a></h2>
+                  <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+                   <li class="hover:underline"><a href="#">Donation</a></li>
+                   <li class="hover:underline"><a href="#">Service</a></li>
+                   <li class="hover:underline"><a href="#">Campaign</a></li>
+                  </ul>
+               </div>
+               <div class="w-[50%] xl:w-fit">
+                   <h2 class="text-[16px] xl:py-[10px] py-[15px]">company</h2>
+                   <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+                    <li class="hover:underline"><a href="aboutusindex.html">About</a></li>
+                    <li class="hover:underline"><a href="#">jobs</a></li>
+                    <li class="hover:underline"><a href="#">Brand</a></li>
+                    <li class="hover:underline"><a href="#">Newsroom</a></li>
+                    <li class="hover:underline"><a href="#">Fall Release</a></li>
+                    
+                   </ul>
+           </div>
+           <div class="w-[50%] xl:w-fit">
+               <h2 class="text-[16px] xl:py-[10px] py-[15px]">Resource</h2>
+               <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+                <li class="hover:underline"><a href="#">Collage</a></li>
+                <li class="hover:underline"><a href="supportindex.html">Support</a></li>
+                <li class="hover:underline"><a href="#">Safety</a></li>
+                <li class="hover:underline"><a href="#">Brand</a></li>
+                <li class="hover:underline"><a href="#">Blog</a></li>
+                <li class="hover:underline"><a href="#">Feedback</a></li>
+                <li class="hover:underline"><a href="#">Devloper</a></li>
+                <li class="hover:underline"><a href="#">Creators</a></li>
+                <li class="hover:underline"><a href="#">Commuanity</a></li>
+               </ul>
+
+       </div>
+       <div class="w-[50%] xl:w-fit">
+           <h2 class="text-[16px] xl:py-[10px] py-[15px]">Resource</h2>
+           <ul class="text-white flex flex-col gap-[10px] leading-[24px] font-[400] ">
+            <li class="hover:underline"><a href="aboutusindex.html">Tearm</a></li>
+            <li class="hover:underline"><a href="#">Pravicy</a></li>
+            <li class="hover:underline"><a href="#">Cocking Setting</a></li>
+            <li class="hover:underline"><a href="#">Guidelince</a></li>
+            <li class="hover:underline"><a href="#">Ackonwledgement</a></li>
+            <li class="hover:underline"><a href="#">Licens</a></li>
+            <li class="hover:underline"><a href="#">Company information</a></li>
+           </ul>
+   </div>
+</footer>
+ <!-- section2 -->
+ <section class="bg-black pb-10">
+ <div class=" bg-black max-w-[1120px] mx-auto flex  border-t-2 border-lightBlue500 items-center justify-between pt-7 ">
+   <div class="text-white">
+       <img src="assets/LOGO1-removebg-preview.png" alt="logo" width="85px" height="65px">
+   </div>
+   <div class="xl:block hidden">
+    <button class="custom-button2 "><a href="signupindex.html">Sing Up</a></button>
+</div>
+<div class="block xl:hidden">
+    <button class="custom-button2"><a href="indexlogin.html">Log in</a></button>
+</div>
+   </div>
+       </div>
+ </section>
+       <script src="index.js"></script>
+       <script>
+        feather.replace()
+        const menuIcon = document.getElementById('menuIcon');
+const closeIcon = document.getElementById('closeIcon');
+const menuItems = document.getElementById('menuItems');
+
+function toggleMenu() {
+    const isActive = menuIcon.classList.contains('active');
+
+    menuIcon.classList.toggle('active', !isActive);
+    closeIcon.classList.toggle('hidden', !isActive);
+    menuItems.classList.toggle('hidden', !isActive);
+}
+menuIcon.addEventListener('click', toggleMenu);
+closeIcon.addEventListener('click', toggleMenu);
+    </script>
+    </body>
+    </html>   
+    
+</body>
+</html>
